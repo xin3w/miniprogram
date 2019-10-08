@@ -11,7 +11,32 @@ Page({
       name: "zhanghui",
       "sex": "男",
     },
-    arrNum: [1, 2, 3]
+    arrNum: [1, 2, 3],
+    dataNewsList: [{
+        id: 0,
+        src: "https://tuimeizi.cn/random?w=400&h=400&o=1&t=text",
+        title: "000",
+        time: "2019-10-01 15:00:00"
+      },
+      {
+        id: 1,
+        src: "https://tuimeizi.cn/random?w=400&h=400&o=2&t=text",
+        title: "001",
+        time: "2019-10-01 15:00:00"
+      },
+      {
+        id: 2,
+        src: "https://tuimeizi.cn/random?w=400&h=400&o=3&t=text",
+        title: "002",
+        time: "2019-10-01 15:00:00"
+      },
+      {
+        id: 3,
+        src: "https://tuimeizi.cn/random?w=400&h=400&o=4&t=text",
+        title: "003",
+        time: "2019-10-01 15:00:00"
+      }
+    ]
   },
 
   /**
@@ -23,13 +48,18 @@ Page({
   },
   add() {
     this.data.arrNum.push(this.data.arrNum.length + 1)
-    this.setData(this.data)
+    this.setData({
+      arrNum: this.data.arrNum
+    })
   },
   random() {
     this.data.arrNum.sort(() => {
       return Math.random() > 0.5 ? 1 : -1
     })
-    this.setData(this.data)
+    this.setData({
+      arrNum: this.data.arrNum
+    })
+
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

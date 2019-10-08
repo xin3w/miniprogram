@@ -1,0 +1,4 @@
+var text = "这是另一个wxs模块下面的内容"
+module.exports = {
+  text:text
+}

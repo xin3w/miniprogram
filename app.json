@@ -12,20 +12,23 @@
     "enablePullDownRefresh": false
   },
   "tabBar": {
-    "position":"bottom",
-    "color":"#ccc",
-    "selectedColor":"#000",
+    "position": "bottom",
+    "color": "#ccc",
+    "selectedColor": "#000",
     "list": [
       {
-      "pagePath": "pages/test/test",
-      "text": "页面一",
-      "iconPath":"static/img/foot-icon1.png",
-      "selectedIconPath":"static/img/foot-icon1-active.png"
-    },{
-      "pagePath": "pages/test/test2",
-      "text": "页面二",
-      "iconPath": "static/img/foot-icon2.png",
-      "selectedIconPath": "static/img/foot-icon2-active.png"
-    }]
-  }
+        "pagePath": "pages/test/test",
+        "text": "页面一",
+        "iconPath": "static/img/foot-icon1.png",
+        "selectedIconPath": "static/img/foot-icon1-active.png"
+      },
+      {
+        "pagePath": "pages/test/test2",
+        "text": "页面二",
+        "iconPath": "static/img/foot-icon2.png",
+        "selectedIconPath": "static/img/foot-icon2-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }

@@ -1,18 +1,31 @@
 <!--pages/test/test.wxml-->
+<wxs src="../../wxs/wxs.wxs" module="custom" />
 <view>
-
-  <text>{{msg}}</text>
-  <view style="border-bottom:1rpx solid #000"></view>
+  <view>{{msg}}</view>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++
   <view wx:for="{{arr}}" wx:key="">{{index}}:{{item}}</view>
-  <view style="border-bottom:1rpx solid #000">---------</view>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++
   <view wx:for="{{obj}}" wx:key="">{{index}}:{{item}}</view>
-  <view style="border-bottom:1rpx solid #000"></view>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++
   <checkbox-group>
-    <label wx:for="{{arrNum}}" wx:key="*this">
-      <checkbox value="test"></checkbox>
-      {{item}}
+    <label wx:for="{{arrNum}}" wx:key="*this" wx:for-item="item">
+      <checkbox value="test" /> {{item}}
     </label>
   </checkbox-group>
   <button bindtap="add">添加</button>
   <button bindtap="random">打乱</button>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  <view>
+    <view wx:for="{{dataNewsList}}" wx:key="">
+      {{custom.text.text}}
+      <view class="img">
+        <image src="{{item.src}}"></image>
+      </view>
+      <view class="txt">
+        <view>{{item.title}}</view>
+        <text>{{custom.codeTime(item.time)}}</text>
+      </view>
+    </view>
+  </view>
+
 </view>
