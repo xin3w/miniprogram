@@ -1,0 +1,3 @@
+.tmp-list {padding:20rpx;}
+.tmp-list image {width:100%;}
+.tmp-list .tmp-item .title {text-align: center;}

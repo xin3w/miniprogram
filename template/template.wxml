@@ -1,0 +1,12 @@
+<template name="list">
+  <view class="tmp-list">
+    <template is="item" wx:for="{{dataTemplate}}" data="{{...item}}" />
+  </view>
+</template>
+
+<template name="item">
+  <view class="tmp-item">
+    <image src="{{src}}"></image>
+    <view class="title">{{id}}:{{title}}</view>
+  </view>
+</template>
