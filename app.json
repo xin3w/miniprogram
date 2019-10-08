@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/test/test2"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#f00",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "测试页面",
+    "backgroundColor": "#000",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "position":"bottom",
+    "color":"#ccc",
+    "selectedColor":"#000",
+    "list": [
+      {
+      "pagePath": "pages/test/test",
+      "text": "页面一",
+      "iconPath":"static/img/foot-icon1.png",
+      "selectedIconPath":"static/img/foot-icon1-active.png"
+    },{
+      "pagePath": "pages/test/test2",
+      "text": "页面二",
+      "iconPath": "static/img/foot-icon2.png",
+      "selectedIconPath": "static/img/foot-icon2-active.png"
+    }]
+  }
+}
