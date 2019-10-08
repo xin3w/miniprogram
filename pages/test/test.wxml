@@ -1,2 +1,18 @@
 <!--pages/test/test.wxml-->
-<text>pages/test/test.wxml</text>
+<view>
+
+  <text>{{msg}}</text>
+  <view style="border-bottom:1rpx solid #000"></view>
+  <view wx:for="{{arr}}" wx:key="">{{index}}:{{item}}</view>
+  <view style="border-bottom:1rpx solid #000">---------</view>
+  <view wx:for="{{obj}}" wx:key="">{{index}}:{{item}}</view>
+  <view style="border-bottom:1rpx solid #000"></view>
+  <checkbox-group>
+    <label wx:for="{{arrNum}}" wx:key="*this">
+      <checkbox value="test"></checkbox>
+      {{item}}
+    </label>
+  </checkbox-group>
+  <button bindtap="add">添加</button>
+  <button bindtap="random">打乱</button>
+</view>
